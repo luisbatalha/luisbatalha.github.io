@@ -3,23 +3,21 @@
   <channel>
     <title>Luis Batalha</title>
     <description>I write about Startups, coding and Physics</description>
-    <link>http://lbatalha.com/</link>
-    <atom:link href="http://lbatalha.com/feed.xml" rel="self" type="application/rss+xml" />
+    <link>http://www.lbatalha.com/</link>
+    <atom:link href="http://www.lbatalha.com/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
         <title>Feynman on Fermat&#39;s Last Theorem</title>
-        <description>&lt;p&gt;Richard Feynman was probably one of the most talented physicists of the 20th century. He was known for having a tremendous mathematical and physical intuition that allowed him to deconstruct complex concepts and approach things from first principles. There are several stories that show Feynman’s genius, from his ability as an undergrad at MIT to use his own methods to solve seemingly untreatable integrals to coming up with his &lt;a href=&quot;#&quot;&gt;own derivation of the Schrodinger equation&lt;/a&gt; as a grad student in Princeton. While reading more about Feynman’s derivation of the Schrodinger equation in Schweber’s book &lt;strong&gt;QED and the Men who made it&lt;/strong&gt; I ended up finding a mention to an undated two-page manuscript written by Feynman about Fermat’s Last theorem. The manuscript doesn’t appear in the book but Schweber casts some light on Feynman’s approach which I will try to explain here in more detail. &lt;/p&gt;
+        <description>&lt;p&gt;Richard Feynman was probably one of the most talented physicists of the 20th century. He was known for having a tremendous mathematical and physical intuition that allowed him to deconstruct complex concepts and approach problems from first principles. There are several stories that show Feynman’s genius, from his ability as an undergrad at MIT to use his own methods to solve seemingly untreatable integrals to coming up with his &lt;a href=&quot;http://fermatslibrary.com/s/feynmans-derivation-of-the-schrodinger-equation&quot;&gt;own derivation of the Schrödinger equation&lt;/a&gt; as a grad student in Princeton. While reading more about Feynman’s derivation of the Schrödinger equation in Schweber’s book &lt;a href=&quot;https://www.amazon.com/QED-Men-Made-Silvan-Schweber/dp/0691033277&quot;&gt;QED and the Men who made it&lt;/a&gt; I ended up finding a mention to an undated two-page manuscript written by Feynman about &lt;a href=&quot;https://en.wikipedia.org/wiki/Fermat%27s_Last_Theorem&quot;&gt;Fermat’s Last Theorem&lt;/a&gt;. The manuscript doesn’t appear in the book but Schweber casts some light on Feynman’s approach which I will try to explain here in more detail. &lt;/p&gt;
 
 &lt;p&gt;Fermat claimed in the 17th century that if \(n\) is a positive integer greater than
-\(2\), the equation \( x^n + y^n = z^n \) does not admit integer non-trivial solutions, i.e. no
-three integers \(x\), \(y\) and \(z\) exist, such that \(xyz = 0\), which satisfy the equation above.
-This statement is universally known as “Fermat’s Last Theorem” (or FLT), and the
+\(2\), the equation \( x^n + y^n = z^n \) does not admit integer non-trivial solutions, i.e. a solution where all three \(x\), \(y\) and \(z\) are non-zero. This statement is universally known as “Fermat’s Last Theorem” (or FLT), and the
 equation therein is called “the Fermat equation”.&lt;/p&gt;
 
 &lt;p&gt;During more than three and half centuries this difficult problem received the attention
 of many mathematicians of great fame, such as, among others, L. Euler, Legendre,
 P.G.L. Dirichlet, E.E. Kummer, and more recently D.R. Heath-Brown, G. Frey, and
-A. Wiles, who finally solved the problem.&lt;/p&gt;
+A. Wiles, who finally &lt;a href=&quot;https://en.wikipedia.org/wiki/Wiles%27s_proof_of_Fermat%27s_Last_Theorem&quot;&gt;solved the problem&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Schweber doesn’t mention the date of the manuscript but since Feynman died in 1988 and Andrew Wiles published the proof of the Theorem in 1995 we know that when Feynman wrote it FLT was still one of the most famous open problems in mathematics. What’s interesting about the manuscript is that Feynman’s approach to the problem is purely probabilistic. He starts by calculating the probability that a number \(N\) is a perfect \(n^{th}\) power. To do this we need to calculate the distance between \(\sqrt[n]{N}\) and \(\sqrt[n]{N+1}\), where N is a large integer (I will explain later why we are doing this)
 $$
@@ -34,6 +32,8 @@ Taking the limit \(N\rightarrow \infty\) and preserving only the larger terms of
 $$
 d \approx \frac{\sqrt[n]{N}}{nN}
 $$&lt;/p&gt;
+
+&lt;p&gt;Note that \(d \approx \frac{\sqrt[n]{N}}{nN} =\frac{1}{n  \underbrace{\sqrt[n]{N}&amp;hellip;\sqrt[n]{N}}_{n-1 \text{ times}}} &amp;lt; 1\) since \(n&amp;gt;1\), \(\sqrt[n]{N}&amp;gt;1\) and so \(n\sqrt[n]{N}&amp;hellip;\sqrt[n]{N} &amp;gt;1\).&lt;/p&gt;
 
 &lt;p&gt;Feynman then writes “the probability that \(N\) is a perfect \(n^{th}\) power is \(\frac{\sqrt[n]{N}}{nN}\) ” . He didn’t explain how he got to this conclusion so here is what I think his thought process was. If \(N\) is a perfect power \(N=z^n\), there exists at least one integer ( \(\sqrt[n]{N} = z \)) in the interval \([\sqrt[n]{N},\sqrt[n]{N+1}]\). Since the distance between all consecutive integers is \(1\) the probability that \([\sqrt[n]{N},\sqrt[n]{N+1}]\) contains an integer is the ratio of the length of the intervals between two integers and the distance between \(\sqrt[n]{N}\) and \(\sqrt[n]{N+1}\): \(\frac{d}{1}\). A good way to visualize this is imagining a line where the distance between all consecutive integers is 1 meter. If someone drops a ruler of length d meter on top of the line the probability the ruler “hits” an integer is \( \frac{d \text{ meter}}{1 \text{meter}}= d \approx \frac{\sqrt[n]{N}}{nN} \).&lt;/p&gt;
 
@@ -78,7 +78,9 @@ $$&lt;/p&gt;
 
 &lt;p&gt;Finally we got an expression for the probability that \( z^n=x^n + y^n \) is an integer and we can calculate it for several \(n\)’s. Setting \(\mathsf{x}_{0}=2\) we can see that the probability of there being integer solutions to \( z^n=x^n + y^n \) (\(\frac{1}{n\mathsf{x}_{0}^{n-3}} \mathsf{\int}_{1}^{\infty}  \mathsf{\int}_{1}^{\infty} (u^n + v^n)^{-1+\frac{1}{n}}  d u \ d v\)) does decrease with increasing \(n\). &lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/zk4hixX.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/qDWuLPe.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+
+&lt;!-- http://i.imgur.com/zk4hixX.png --&gt;
 
 &lt;p&gt;Feynman also knew about Sophie Germain’s result, who proved in the early 19th century that Fermat’s equation has no solution for \(n \leq 100\). 
 Since it gets more and more difficult to find a solution as \(n\) increases, Feynman tried to calculate the probability of finding a solution to Fermat’s equation using the knowledge that there’s none for \(n \leq 100\).&lt;/p&gt;
@@ -94,7 +96,7 @@ If we calculate the integral for \(\mathsf{x}_{0}=2\)&lt;/p&gt;
 \int_{100}^{\infty} \frac{1}{n^2 2^{n-3}} dn \approx    8.85 \times 10^{-34}
 $$&lt;/p&gt;
 
-&lt;p&gt;which means that the probability is less than \(8.85 \times 10^{-32}\)%. Feynman concluded: “for my money Fermat’s theorem is true”. This is of course not very formal from a mathematical standpoint and is far from the &lt;a href=&quot;https://www.math.ias.edu/%7Eanindya/fermat.pdf&quot;&gt;real 110 pages long proof&lt;/a&gt; of FLT that took A.Whiles years to put together, notwithstanding it’s a really good example of Feynman’s scientific approach and genius. As Feynman used to say: &lt;/p&gt;
+&lt;p&gt;which means that the probability is less than \(10^{-33}\)%. Feynman concluded: “for my money Fermat’s theorem is true”. This is of course not very formal from a mathematical standpoint and is far from the &lt;a href=&quot;https://www.math.ias.edu/%7Eanindya/fermat.pdf&quot;&gt;real 110 pages long proof&lt;/a&gt; of FLT that took A.Whiles years to put together, notwithstanding it’s a really good example of Feynman’s scientific approach and genius. As Feynman used to say: &lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;
@@ -105,9 +107,9 @@ $$&lt;/p&gt;
 &lt;!-- After the official release of the IPhone 5C and 5S I decided I wanted to buy an IPhone. However, like many people, I thought there were no groundbreaking changes between the new IPhone and the old IPhone 5, which led me to believe the best option would be buying a cheaper old version of the phone. Unfortunately, Apple had stopped selling the old IPhone 5 just after the new ones came out and so I looked at a couple of websites that were still selling them like Amazon, Ebay and a few more and tried to figure out which one was selling on average the cheapest devices. During my IPhone quest I ended up in a website called OLX (in this case the portuguese version of OLX since I am living in Portugal), which is a place where people can list and sell their items for free. One characteristic that stood out to me immediately in OLX was the easiness in contacting the seller, posing questions and making offers.To do that you just needed to fill out a simple form with your offer, email address, phone number and name and they would send an email to the seller with that information, without forcing you to register in the website. The seller would then have the option to decline or accept your offer via email. The second thing I noticed in OLX was the price variation. Unlike some of the other websites, which had pretty stable prices, OLX was showing a significant swings in the price of the listed IPhones. That was partially due to the fact that new and used IPhones were being sold at the same time, but a more interesting fact was that apparently a lot of sellers were having difficulties trying to figure out a price point to sell their IPhones, particularly after the release of the new ones. The combination of these two factors seemed to be the perfect opportunity to get a good deal. I thought a way to get a cheap IPhone was to approach the confused sellers and make them a few lowball offers with different emails to make them think the price they were asking was to high according to the market. Finally, I would make a not-so-low price offer that they would be inclined to take, thinking it was a good offer when compared to the other ones. Based on this assumption I quickly wrote a scrappy program in Python using Mechanize ( a library for automatic interaction with browsers ), that searched IPhone 5 in OLX, and did that for every potential IPhone found. I ran the program twice a day, searching for new IPhones and saving in a .txt file the ones I had already “contacted”. I was sending 5 emails per IPhone found, the first 4 where offering a price 70% lower than the one listed and the fifth one was offering a price 60% lower. The interval between sending the first and the last email was about 3 hours. Two weeks and almost 160 IPhones later, I found one guy that was originally selling an IPhone 5 for 225$ (with no contract and in perfect condition) and ended up selling me the phone for 90$!
  --&gt;
 </description>
-        <pubDate>Sun, 08 Jun 2014 04:21:29 -0700</pubDate>
-        <link>http://lbatalha.com/jekyll/pixyll/2014/06/08/feynman-on-fermats-last-theorem/</link>
-        <guid isPermaLink="true">http://lbatalha.com/jekyll/pixyll/2014/06/08/feynman-on-fermats-last-theorem/</guid>
+        <pubDate>Thu, 30 Jun 2016 04:21:29 -0700</pubDate>
+        <link>http://www.lbatalha.com/jekyll/pixyll/2016/06/30/feynman-on-fermats-last-theorem/</link>
+        <guid isPermaLink="true">http://www.lbatalha.com/jekyll/pixyll/2016/06/30/feynman-on-fermats-last-theorem/</guid>
       </item>
     
   </channel>

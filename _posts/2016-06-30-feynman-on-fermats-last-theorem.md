@@ -1,23 +1,21 @@
 ---
 layout:     post
 title:      Feynman on Fermat's Last Theorem
-date:       2014-06-08 11:21:29
+date:       2016-06-30 11:21:29
 summary:    Feynman on Fermat's Last Theorem
 categories: jekyll pixyll
 ---
 
-Richard Feynman was probably one of the most talented physicists of the 20th century. He was known for having a tremendous mathematical and physical intuition that allowed him to deconstruct complex concepts and approach things from first principles. There are several stories that show Feynman’s genius, from his ability as an undergrad at MIT to use his own methods to solve seemingly untreatable integrals to coming up with his [own derivation of the Schrodinger equation](#) as a grad student in Princeton. While reading more about Feynman’s derivation of the Schrodinger equation in Schweber’s book __QED and the Men who made it__ I ended up finding a mention to an undated two-page manuscript written by Feynman about Fermat’s Last theorem. The manuscript doesn’t appear in the book but Schweber casts some light on Feynman’s approach which I will try to explain here in more detail. 
+Richard Feynman was probably one of the most talented physicists of the 20th century. He was known for having a tremendous mathematical and physical intuition that allowed him to deconstruct complex concepts and approach problems from first principles. There are several stories that show Feynman’s genius, from his ability as an undergrad at MIT to use his own methods to solve seemingly untreatable integrals to coming up with his [own derivation of the Schrödinger equation](http://fermatslibrary.com/s/feynmans-derivation-of-the-schrodinger-equation) as a grad student in Princeton. While reading more about Feynman’s derivation of the Schrödinger equation in Schweber’s book [QED and the Men who made it](https://www.amazon.com/QED-Men-Made-Silvan-Schweber/dp/0691033277) I ended up finding a mention to an undated two-page manuscript written by Feynman about [Fermat’s Last Theorem](https://en.wikipedia.org/wiki/Fermat%27s_Last_Theorem). The manuscript doesn’t appear in the book but Schweber casts some light on Feynman’s approach which I will try to explain here in more detail. 
 
 Fermat claimed in the 17th century that if \\(n\\) is a positive integer greater than
-\\(2\\), the equation \\( x^n + y^n = z^n \\) does not admit integer non-trivial solutions, i.e. no
-three integers \\(x\\), \\(y\\) and \\(z\\) exist, such that \\(xyz = 0\\), which satisfy the equation above.
-This statement is universally known as “Fermat’s Last Theorem” (or FLT), and the
+\\(2\\), the equation \\( x^n + y^n = z^n \\) does not admit integer non-trivial solutions, i.e. a solution where all three \\(x\\), \\(y\\) and \\(z\\) are non-zero. This statement is universally known as “Fermat’s Last Theorem” (or FLT), and the
 equation therein is called “the Fermat equation”.
 
 During more than three and half centuries this difficult problem received the attention
 of many mathematicians of great fame, such as, among others, L. Euler, Legendre,
 P.G.L. Dirichlet, E.E. Kummer, and more recently D.R. Heath-Brown, G. Frey, and
-A. Wiles, who finally solved the problem.
+A. Wiles, who finally [solved the problem](https://en.wikipedia.org/wiki/Wiles%27s_proof_of_Fermat%27s_Last_Theorem).
 
 
 Schweber doesn’t mention the date of the manuscript but since Feynman died in 1988 and Andrew Wiles published the proof of the Theorem in 1995 we know that when Feynman wrote it FLT was still one of the most famous open problems in mathematics. What’s interesting about the manuscript is that Feynman’s approach to the problem is purely probabilistic. He starts by calculating the probability that a number \\(N\\) is a perfect \\(n^{th}\\) power. To do this we need to calculate the distance between \\(\sqrt[n]{N}\\) and \\(\sqrt[n]{N+1}\\), where N is a large integer (I will explain later why we are doing this)
@@ -34,6 +32,7 @@ $$
 d \approx \frac{\sqrt[n]{N}}{nN}
 $$
 
+Note that \\(d \approx \frac{\sqrt[n]{N}}{nN} =\frac{1}{n  \underbrace{\sqrt[n]{N}...\sqrt[n]{N}}\_{n-1 \text{ times}}} < 1\\) since \\(n>1\\), \\(\sqrt[n]{N}>1\\) and so \\(n\sqrt[n]{N}...\sqrt[n]{N} >1\\).
 
 Feynman then writes “the probability that \\(N\\) is a perfect \\(n^{th}\\) power is \\(\frac{\sqrt[n]{N}}{nN}\\) ” . He didn’t explain how he got to this conclusion so here is what I think his thought process was. If \\(N\\) is a perfect power \\(N=z^n\\), there exists at least one integer ( \\(\sqrt[n]{N} = z \\)) in the interval \\([\sqrt[n]{N},\sqrt[n]{N+1}]\\). Since the distance between all consecutive integers is \\(1\\) the probability that \\([\sqrt[n]{N},\sqrt[n]{N+1}]\\) contains an integer is the ratio of the length of the intervals between two integers and the distance between \\(\sqrt[n]{N}\\) and \\(\sqrt[n]{N+1}\\): \\(\frac{d}{1}\\). A good way to visualize this is imagining a line where the distance between all consecutive integers is 1 meter. If someone drops a ruler of length d meter on top of the line the probability the ruler “hits” an integer is \\( \frac{d \text{ meter}}{1 \text{meter}}= d \approx \frac{\sqrt[n]{N}}{nN} \\).
 
@@ -82,7 +81,9 @@ I think there’s actually a typo in the lower limits of the integral (\\(c_n\\)
 
 Finally we got an expression for the probability that \\( z^n=x^n + y^n \\) is an integer and we can calculate it for several \\(n\\)’s. Setting \\(\mathsf{x}\_{0}=2\\) we can see that the probability of there being integer solutions to \\( z^n=x^n + y^n \\) (\\(\frac{1}{n\mathsf{x}\_{0}^{n-3}} \mathsf{\int}\_{1}^{\infty}  \mathsf{\int}\_{1}^{\infty} (u^n + v^n)^{-1+\frac{1}{n}}  d u \\ d v\\)) does decrease with increasing \\(n\\). 
 
-![](http://i.imgur.com/zk4hixX.png)
+![](http://i.imgur.com/qDWuLPe.png)
+
+<!-- http://i.imgur.com/zk4hixX.png -->
 
 Feynman also knew about Sophie Germain’s result, who proved in the early 19th century that Fermat’s equation has no solution for \\(n \leq 100\\). 
 Since it gets more and more difficult to find a solution as \\(n\\) increases, Feynman tried to calculate the probability of finding a solution to Fermat’s equation using the knowledge that there’s none for \\(n \leq 100\\).
@@ -98,7 +99,7 @@ $$
 \int_{100}^{\infty} \frac{1}{n^2 2^{n-3}} dn \approx 	8.85 \times 10^{-34}
 $$
 
-which means that the probability is less than \\(8.85 \times 10^{-32}\\)%. Feynman concluded: “for my money Fermat’s theorem is true”. This is of course not very formal from a mathematical standpoint and is far from the [real 110 pages long proof](https://www.math.ias.edu/~anindya/fermat.pdf) of FLT that took A.Whiles years to put together, notwithstanding it’s a really good example of Feynman’s scientific approach and genius. As Feynman used to say: 
+which means that the probability is less than \\(10^{-33}\\)%. Feynman concluded: “for my money Fermat’s theorem is true”. This is of course not very formal from a mathematical standpoint and is far from the [real 110 pages long proof](https://www.math.ias.edu/~anindya/fermat.pdf) of FLT that took A.Whiles years to put together, notwithstanding it’s a really good example of Feynman’s scientific approach and genius. As Feynman used to say: 
 
 <blockquote>
   <p>
