@@ -96,7 +96,7 @@ If we calculate the integral for \(\mathsf{x}_{0}=2\)&lt;/p&gt;
 \int_{100}^{\infty} \frac{1}{n^2 2^{n-3}} dn \approx    8.85 \times 10^{-34}
 $$&lt;/p&gt;
 
-&lt;p&gt;which means that the probability is less than \(10^{-33}\)%. Feynman concluded: “for my money Fermat’s theorem is true”. This is of course not very formal from a mathematical standpoint and is far from the &lt;a href=&quot;https://www.math.ias.edu/%7Eanindya/fermat.pdf&quot;&gt;real 110 pages long proof&lt;/a&gt; of FLT that took A.Whiles years to put together, notwithstanding it’s a really good example of Feynman’s scientific approach and genius. As Feynman used to say: &lt;/p&gt;
+&lt;p&gt;which means that the probability is less than \(10^{-31}\)%. Feynman concluded: “for my money Fermat’s theorem is true”. This is of course not very formal from a mathematical standpoint and is far from the &lt;a href=&quot;https://www.math.ias.edu/%7Eanindya/fermat.pdf&quot;&gt;real 110 pages long proof&lt;/a&gt; of FLT that took A.Whiles years to put together, notwithstanding it’s a really good example of Feynman’s scientific approach and genius. As Feynman used to say: &lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;
@@ -108,8 +108,8 @@ $$&lt;/p&gt;
  --&gt;
 </description>
         <pubDate>Thu, 30 Jun 2016 04:21:29 -0700</pubDate>
-        <link>http://www.lbatalha.com/jekyll/pixyll/2016/06/30/feynman-on-fermats-last-theorem/</link>
-        <guid isPermaLink="true">http://www.lbatalha.com/jekyll/pixyll/2016/06/30/feynman-on-fermats-last-theorem/</guid>
+        <link>http://www.lbatalha.com/feynman-on-fermats-last-theorem</link>
+        <guid isPermaLink="true">http://www.lbatalha.com/feynman-on-fermats-last-theorem</guid>
       </item>
     
   </channel>
