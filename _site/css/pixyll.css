@@ -783,6 +783,12 @@ small,
 .small {
   font-size: 0.707rem; }
 
+.twitter-link {
+  color: rgba(0, 0, 0, 0.44) !important;
+  font-size: 1rem;
+  margin-left: 1em;
+  line-height: 1.9; }
+
 .site-header {
   padding-top: 0.5rem;
   padding-bottom: 1rem; }

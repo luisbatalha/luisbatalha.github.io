@@ -10,7 +10,7 @@ I'm a Physicist by training and I have done research in particle physics for the
 
 I'm also one of the founders of [Fermat's Library](http://www.fermatslibrary.com), a platform to annotate and illuminate academic papers. You can find me there commenting papers mostly about Physics and Math. My favorite paper in the platform is [Feynman's derivation of the Schrödinger equation](http://fermatslibrary.com/s/feynmans-derivation-of-the-schrodinger-equation).
 
-Feel free to reach out if you want to get in touch with me: luis@orankl.com.
+Feel free to reach out if you want to get in touch with me: luis@orankl.com. You can also follow me on [Twitter](http://twitter.com/luismbat)
 
 
 <!-- This Jekyll theme was crafted with <3 by [John Otander](http://johnotander.com)
