@@ -6,6 +6,15 @@
 * @license MIT
 */
 /*!
+Animate.css - http://daneden.me/animate
+Licensed under the MIT license - http://opensource.org/licenses/MIT
+
+Copyright (c) 2014 Daniel Eden
+*/
+@font-face {
+  font-family: "Calendas Plus";
+  src: url("../fonts/calendas_plus/calendas_plus-webfont.eot") format("eot"), url("../fonts/calendas_plus/calendas_plus-webfont.woff2") format("woff2"), url("../fonts/calendas_plus/calendas_plus-webfont.woff") format("woff"), url("../fonts/calendas_plus/calendas_plus-webfont.ttf") format("truetype"), url("../fonts/calendas_plus/calendas_plus-webfont.svg") format("svg"); }
+/*!
 
   BASSCSS
 
