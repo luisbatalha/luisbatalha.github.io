@@ -99,7 +99,7 @@ $$
 \int_{100}^{\infty} \frac{1}{n^2 2^{n-3}} dn \approx 	8.85 \times 10^{-34}
 $$
 
-which means that the probability is less than \\(10^{-31}\\)%. Feynman concluded: “for my money Fermat’s theorem is true”. This is of course not very formal from a mathematical standpoint and is far from the [real 110 pages long proof](https://www.math.ias.edu/~anindya/fermat.pdf) of FLT that took A.Whiles years to put together, notwithstanding it’s a really good example of Feynman’s scientific approach and genius. As Feynman used to say: 
+which means that the probability is less than \\(10^{-31}\\)%. Feynman concluded: “for my money Fermat’s theorem is true”. This is of course not very formal from a mathematical standpoint and is far from the [real 110 pages long proof](https://www.math.ias.edu/~anindya/fermat.pdf) of FLT that took A.Wiles years to put together, notwithstanding it’s a really good example of Feynman’s scientific approach and genius. As Feynman used to say: 
 
 <blockquote>
   <p>
