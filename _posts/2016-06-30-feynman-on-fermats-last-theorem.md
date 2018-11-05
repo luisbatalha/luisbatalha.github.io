@@ -41,11 +41,11 @@ Now in the case of FLT, \\( N=x^n + y^n \\) and so the probability that \\( x^n 
 Feynman also chose to do \\(\mathsf{x}\_{0}=\mathsf{y}\_{0}\\) . He ends up with the following expression:
 
 $$
-\mathsf{\int}\_{\mathsf{x}\_{0}}^{\infty}  \mathsf{\int}\_{\mathsf{x}\_{0}}^{\infty} \frac{1}{n}(x^n + y^n)^{-1+\frac{1}{n}} dx \\ dy = \frac{1}{n\mathsf{x}\_{0}^{n-3}}c_n \\ 
+\mathsf{\int}_{\mathsf{x}_{0}}^{\infty}  \mathsf{\int}_{\mathsf{x}_{0}}^{\infty} \frac{1}{n}(x^n + y^n)^{-1+\frac{1}{n}} dx \\ dy = \frac{1}{n\mathsf{x}_{0}^{n-3}}c_n \\ 
 $$
 
 $$
-c_n = \mathsf{\int}\_{0}^{\infty}  \mathsf{\int}\_{0}^{\infty} (u^n + v^n)^{-1+\frac{1}{n}} du \\ dv
+c_n = \mathsf{\int}_{0}^{\infty}  \mathsf{\int}_{0}^{\infty} (u^n + v^n)^{-1+\frac{1}{n}} du dv
 $$
 
 
@@ -54,24 +54,22 @@ To obtain \\(c_n\\) Feynman performs 2 changes of variables. The first one is \\
 Doing the first change of variables:
 
 $$
-\mathsf{\int}\_{\theta(\mathsf{x}\_{0})}^{\infty} \mathsf{\int}\_{\phi(\mathsf{x}\_{0})}^{\infty}  f(x(\theta,\phi),y(\theta,\phi)) \left|\frac{\partial(x,y)}{\partial(\theta,\phi)}\right| d \theta \\ d \phi = 
-$$
-$$
-=\mathsf{\int}\_{0}^{\infty}  \mathsf{\int}\_{0}^{\infty} \frac{1}{n} \mathsf{x}\_{0}^{1-n}((\theta + 1)^n + (\phi + 1)^n)^{-1+\frac{1}{n}} \mathsf{x}\_{0}^{2} d \theta \\ d \phi = 
-$$
-$$
-=\frac{1}{n\mathsf{x}\_{0}^{n-3}} \mathsf{\int}\_{0}^{\infty}  \mathsf{\int}\_{0}^{\infty} ((\theta + 1)^n + (\phi + 1)^n)^{-1+\frac{1}{n}}  d \theta \\ d \phi
+\mathsf{\int}_{\theta(\mathsf{x}_{0})}^{\infty} \mathsf{\int}_{\phi(\mathsf{x}_{0})}^{\infty}  f(x(\theta,\phi),y(\theta,\phi)) \left|\frac{\partial(x,y)}{\partial(\theta,\phi)}\right| d \theta d \phi = \\
+=\mathsf{\int}_{0}^{\infty}  \mathsf{\int}_{0}^{\infty} \frac{1}{n} \mathsf{x}_{0}^{1-n}((\theta + 1)^n + (\phi + 1)^n)^{-1+\frac{1}{n}} \mathsf{x}_{0}^{2} d \theta d \phi = \\
+=\frac{1}{n\mathsf{x}_{0}^{n-3}} \mathsf{\int}_{0}^{\infty}  \mathsf{\int}_{0}^{\infty} ((\theta + 1)^n + (\phi + 1)^n)^{-1+\frac{1}{n}}  d \theta d \phi
 $$
 
-where \\(\left|\frac{\partial(x,y)}{\partial(\theta,\phi)}\right|= \frac{\partial x}{\partial \theta}\frac{\partial y}{\partial \phi }-\frac{\partial x }{\partial \phi}\frac{\partial y}{\partial \theta} = \mathsf{x}\_{0}^2 \\) is the Jacobian and \\(\theta( \mathsf{x}\_{0})=\frac{\mathsf{x}\_{0}-\mathsf{x}\_{0}}{\mathsf{x}\_{0}} = 0\\) \\( \phi( \mathsf{x}\_{0} ) = \frac{\mathsf{x}\_{0}-\mathsf{x}\_{0}}{\mathsf{x}\_{0}} = 0 \\) . 
+where 
+$$\\\left|\frac{\partial(x,y)}{\partial(\theta,\phi)}\right|= \frac{\partial x}{\partial \theta}\frac{\partial y}{\partial \phi }-\frac{\partial x }{\partial \phi}\frac{\partial y}{\partial \theta} = \mathsf{x}_{0}^2 \\$$ 
+
+is the Jacobian and 
+$$\theta( \mathsf{x}_{0})=\frac{\mathsf{x}_{0}-\mathsf{x}_{0}}{\mathsf{x}_{0}} = 0 \ \ \ \phi( \mathsf{x}_{0} ) = \frac{\mathsf{x}_{0}-\mathsf{x}_{0}}{\mathsf{x}_{0}} = 0 \\$$.  
 
 Finally we do the second change of variables \\(u = \theta + 1\\) and \\(v = \phi + 1\\)
 
 $$
-\frac{1}{n\mathsf{x}\_{0}^{n-3}} \mathsf{\int}\_{0}^{\infty}  \mathsf{\int}\_{0}^{\infty} ((\theta + 1)^n + (\phi + 1)^n)^{-1+\frac{1}{n}}  d \theta \\ d \phi = 
-$$
-$$
-=\frac{1}{n\mathsf{x}\_{0}^{n-3}} \mathsf{\int}\_{1}^{\infty}  \mathsf{\int}\_{1}^{\infty} (u^n + v^n)^{-1+\frac{1}{n}}  d u \\ d v
+\frac{1}{n\mathsf{x}_{0}^{n-3}} \mathsf{\int}_{0}^{\infty}  \mathsf{\int}_{0}^{\infty} ((\theta + 1)^n + (\phi + 1)^n)^{-1+\frac{1}{n}}  d \theta d \phi = \\
+=\frac{1}{n\mathsf{x}_{0}^{n-3}} \mathsf{\int}_{1}^{\infty}  \mathsf{\int}_{1}^{\infty} (u^n + v^n)^{-1+\frac{1}{n}}  d u d v
 $$
 
 
