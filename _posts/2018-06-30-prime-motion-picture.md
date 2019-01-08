@@ -18,9 +18,10 @@ The inspiration to create this motion picture came from a video on [Numberphile]
 If you want to create your own prime images the code is available [here](https://www.github.com).
 
 A few open questions worth exploring later:
-\\
+
+
 - Are there any special compression/encryption properties for a video where every frame is a prime?
-\\
+
 - Would it be possible to have a similar video but in which if we join every frame one after the other into a single number, it would also result in a prime?
-\\
+
 <!-- I searched a bit online and this also seems to be the first ever motion picture made solely with prime numbers :)  -->
